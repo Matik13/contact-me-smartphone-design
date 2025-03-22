@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Smartphone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="phone-container">
+        <div class="phone-notch">
+            <div class="phone-camera"></div>
+        </div>
+        <div class="phone-screen">
+            <div class="status-bar">
+                <div id="time"></div>
+                <div>
+                    <img src="images/signal.svg" alt="Signal">
+                    <img src="images/wifi.svg" alt="WiFi">
+                    <img src="images/battery.svg" alt="Battery">
+                    <span style="position: relative; top: -1px;">98%</span>
+                </div>
+            </div>
+            <div class="app-grid">
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://www.google.com" target="_blank">
+                            <img src="images/google.webp" alt="Google" class="app-image">
+                        </a>
+                    </div>
+                    <span>Google</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="mailto:kontakt.mateusz.szczesniak@gmail.com">
+                            <img src="images/gmail.webp" alt="Gmail" class="app-image">
+                        </a>
+                    </div>
+                    <span>Gmail</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://www.google.com/maps/place/Kielce/" target="_blank">
+                            <img src="images/gmaps.webp" alt="Maps" class="app-image">
+                        </a>
+                    </div>
+                    <span>Maps</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://github.com/Matik13" target="_blank">
+                            <img src="images/github.webp" alt="GitHub" class="app-image">
+                        </a>
+                    </div>
+                    <span>GitHub</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://www.linkedin.com/in/szczesniak-mateusz" target="_blank">
+                            <img src="images/linkedin.webp" alt="LinkedIn" class="app-image">
+                        </a>
+                    </div>
+                    <span>LinkedIn</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="discord://-/users/494146797078446081">
+                            <img src="images/discord.webp" alt="Discord" class="app-image">
+                        </a>
+                    </div>
+                    <span>Discord</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://www.facebook.com/matik.lego" target="_blank">
+                            <img src="images/facebook.webp" alt="Facebook" class="app-image">
+                        </a>
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://www.instagram.com/matiklego/" target="_blank">
+                            <img src="images/instagram.webp" alt="Instagram" class="app-image">
+                        </a>
+                    </div>
+                    <span>Instagram</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://linktr.ee/mat1k" target="_blank">
+                            <img src="images/linktree.webp" alt="Linktree" class="app-image">
+                        </a>
+                    </div>
+                    <span>Linktree</span>
+                </div>
+                <div class="app-item">
+                    <div class="app-icon">
+                        <a href="https://steamcommunity.com/id/matiksteam/" target="_blank">
+                            <img src="images/steam.webp" alt="Steam" class="app-image">
+                        </a>
+                    </div>
+                    <span>Steam</span>
+                </div>
+            </div>
+            <div class="navigation-bar">
+                <div class="navigation-button">
+                    <img src="images/square.svg" alt="Square">
+                </div>
+                <div class="navigation-button">
+                    <img src="images/circle.svg" alt="Circle" style="width: 15px;height: 15px;">
+                </div>
+                <div class="navigation-button">
+                    <img src="images/triangle.svg" alt="Triangle">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById('time');
+            const now = new Date();
+            timeElement.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+
+</html>
